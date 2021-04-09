@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-container img {
+    margin: 35px 35px 0 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100vw;
+    max-width: 700px;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+.info-container h1 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 39px;  
+}
+.info-container bold {
+    font-weight: 500 !important;
+    color: #B4B4F4 !important;
+}
+.info-container p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #000000;
+}
+.info-container button {
+    height: 71px;
+    width: 35%;
+
+    border: none;
+
+    background: #7DF18B;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+.info-1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.info-2 {
+    display: flex;
+    justify-content: space-around;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 48px;
+}
+@media (min-width: 900px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 95vh;
+    }
+    .container {
+        flex-direction: row;
+
+        max-width: 1200px;
+    }
+    .info-container, .image-container {
+        margin-top: 0;
+
+        margin: 0 100px;
+    }
+    .info-container h1 {
+        font-family: Archivo;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 70px;
+
+        margin-bottom: 44px;
+    }
+    .info-container p {
+        margin-bottom: 52px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+    }
+    .info-2 {
+        margin-top: 50px;
+    }
+    .info-2 button {
+        width: 45%;
+    }
+}
